@@ -28,12 +28,13 @@ Tiger.prototype.say = function(){
 // console.log(tiger.say());  // error
 
 // 正确的 
-// Tiger.prototype.__proto__ = Animal.prototype
+Tiger.prototype.__proto__ = Animal.prototype
 // Tiger.prototype = Object.create(Animal.prototype) //会丢失自己原型的方法
 let tiger = new Tiger()
 console.log(tiger.like);  // meat
 console.log(tiger.address); // { location: '深山老林' }
 console.log(tiger.say()); // 嗷嗷嗷
+console.log(tiger.constructor); // [Function: Tiger]
 
 // 实现一下 Object.create
 function create(parentPrototype){ 
