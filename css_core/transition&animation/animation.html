@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<body>
+    <p>我是p我是p我是p我是p我是p我是p</p>
+</body>
+<style>
+   p {
+  /* animation-delay:1s; */
+  /* animation-direction:reverse; */
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-timing-function: steps(5, end);
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300px;
+    background: skyblue;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 300px;
+    background: pink;
+  }
+}
+
+
+</style>
+</html>

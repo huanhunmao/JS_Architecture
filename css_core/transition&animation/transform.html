@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+</head>
+<body>
+    <div>
+        <img src="../flex/product1.png"/>
+    </div>
+</body>
+<style>
+    img{
+        width: 100px;
+        height: 80px;
+        /* 左 上位置变化 */
+        /* transform:translate(30px,100px);  
+         */
+         /* 缩小 */
+         /* transform: scale(2, 0.5);  */
+         /* 旋转 */
+         /* transform: rotate(0.5turn); */
+         /* 矩阵？ 不常用  */
+         /* transform: matrix(1, 2, 3, 4, 5,6); */
+         /* 倾斜 */
+         /* transform: skew(30deg, 20deg); */
+         /* 缩小后往左上靠  常用*/
+         transform: scale(0.5) translate(-100%, -100%);
+    }
+</style>
+</html>

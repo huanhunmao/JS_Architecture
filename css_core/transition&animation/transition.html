@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+</head>
+<body>
+    <!-- /* property name | duration | easing function | delay */
+transition: margin-right 4s ease-in-out 1s; -->
+<div>
+    <button >submit</button>
+</div>
+</body>
+<style>
+    button{
+        width: 100px;
+        height: 50px;
+        border-radius: 10%;
+        background: skyblue;
+        transition: all 0.5s ease-in-out;
+    }
+     /* 使用 :hover 伪类选择器和 :focus 伪类选择器，当鼠标悬停在按钮上或按钮获得焦点时，应用悬停样式，从而触发过渡效果 */
+    button:hover,
+    button:focus{
+        background:pink;
+    }
+</style>
+</html>
