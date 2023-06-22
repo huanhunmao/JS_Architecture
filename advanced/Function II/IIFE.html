@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIFE 基本功能</title>
+</head>
+<body>
+    <h1>IIFE 基本功能</h1>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+    var script1 = (function(GOOD){
+        // function a(){
+        // return 5
+        // }
+        GOOD('h1').click(function(){
+            GOOD('h1').hide()
+        })
+        // return {
+        //     a
+        // }
+    })(jQuery)
+</script>
+<script>var b = 2</script>
+<script> var c = 3</script>
+<script> 
+    function a(){
+        return 'hahaha'
+    }
+</script>
+</html>
