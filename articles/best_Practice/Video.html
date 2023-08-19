@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Video API</h1>
+
+<video id="my-video" src="video-file.mp4" poster="snail.jpg" width="500"></video>
+
+<div id="controls">
+     <div id="current-time"></div>
+     <button id="play">Play</button>
+     <button id="pause">Pause</button>
+</div>
+</body>
+<script>
+    const videoElement = document.querySelector('#my-video');
+const playBtn = document.querySelector('#play');
+const pauseBtn = document.querySelector('#pause');
+const videoTime = document.querySelector('#current-time');
+
+// play video with the play() method
+playBtn.addEventListener('click', () => videoElement.play());
+
+// pause video with the pause() method
+pauseBtn.addEventListener('click', () => videoElement.pause());
+
+// show video time with the currentTime property
+videoElement.addEventListener('timeupdate', () => {
+  videoTime.innerText = videoElement.currentTime.toFixed(2);
+});
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Audio API</h1>
+
+<audio id="my-audio" src="audio-file.mp3"></audio>
+<div id="controls">
+    <button id="play">Play</button>
+    <button id="pause">Pause</button>
+    <input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
+</div>
+</body>
+<script>
+    const audioElement = document.querySelector('#my-audio');
+const playBtn = document.querySelector('#play');
+const pauseBtn = document.querySelector('#pause');
+const volume = document.querySelector('#volume');
+
+// play audio with the play() method
+playBtn.addEventListener('click', () => audioElement.play());
+
+// pause audio with the pause() method
+pauseBtn.addEventListener('click', () => audioElement.pause());
+
+//adjust volume with the volume property
+volume.addEventListener('change', () => (audioElement.volume = volume.value));
+</script>
+</html>
