@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Activity Popup</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="popup" class="popup">
+  <div class="popup-inner">
+    <img src="item-image.png" alt="Item" class="item-image">
+    <div class="content">
+      <p class="item-description">您有12345*10天的XX权益</p>
+      <div class="quantity-selector">
+        <button id="decrease" class="quantity-btn">-</button>
+        <span id="quantity" class="quantity">1</span>
+        <button id="increase" class="quantity-btn">+</button>
+      </div>
+      <p class="confirmation-question">是否消耗10000XX兑换权益？</p>
+      <button id="confirm-btn" class="confirm-btn">确认兑换</button>
+      <button id="cancel-btn" class="cancel-btn">我再想想</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
