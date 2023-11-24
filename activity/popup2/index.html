@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>活动弹窗</title>
+<style>
+  .popup {
+    background-color: #FFF7E6; /* 浅橙色背景 */
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+
+  .title {
+    color: #FF5722; /* 标题颜色 */
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  .title img {
+    margin-right: 10px; /* 图片和标题之间的间距 */
+  }
+
+  .content {
+    margin-bottom: 20px;
+  }
+
+  .record {
+    font-size: 14px;
+    color: #333; /* 记录文字颜色 */
+    margin-bottom: 10px;
+  }
+  .items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .button {
+    background-color: #FF5722; /* 按钮颜色 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="popup">
+  <div class="title">
+    <img src="path_to_leaf_icon.png" alt="Leaf icon"> <!-- 绿叶图标的路径 -->
+    <span>绿叶怎么获得</span>
+  </div>
+  <div class="content">
+    <p>每日首次6W金币抽取，此后每抽2W金币+1次，积累可达最大20W金币，每2W金币可获得1个绿叶。</p>
+  </div>
+
+  <div class="title">
+    <img src="path_to_record_icon.png" alt="Record icon"> <!-- 兑换记录图标的路径 -->
+    <span>兑换记录</span>
+  </div>
+  <div class="record">
+    <div class="items">
+        <p>12月3日 23:59 </p>
+        <p>用户3001获得300绿叶</p>
+    </div>
+    <div class="items">
+        <p>12月3日 23:59 </p>
+        <p>用户3001获得300绿叶</p>
+    </div>
+    <div class="items">
+        <p>12月3日 23:59 </p>
+        <p>用户3001获得300绿叶</p>
+    </div>
+    <!-- 其他记录... -->
+  </div>
+
+  <button class="button" onclick="alert('Clicked!')">我知道了</button>
+</div>
+
+<script>
+// 可以在这里添加JavaScript，例如处理按钮点击事件
+</script>
+
+</body>
+</html>
