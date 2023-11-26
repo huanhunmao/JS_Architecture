@@ -1,0 +1,21 @@
+
+
+/* 更直接的表达  */
+.post-content {
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: var(--heading-color);
+      font-weight: var(--heading-font-bold);
+      margin-bottom: var(--size-2);
+    }
+  }
+
+.post-content {
+    :is(h1, h2, h3, h4) {
+      color: var(--heading-color);
+      font-weight: var(--heading-font-bold);
+      margin-bottom: var(--size-2);
+    }
+  }

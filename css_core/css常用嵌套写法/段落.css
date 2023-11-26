@@ -1,0 +1,25 @@
+.post-content {
+    & p {
+      color: var(--color-black);
+  
+      & a {
+        font-weight: bold;
+        text-decoration: underline;
+  
+        &:hover {
+          /* hover styles */
+        }
+      }
+    }
+  }
+
+  /* nest media queries */
+  .post-content {
+    & p {
+      /* base styles */
+  
+      @media (min-width: 400px) {
+        /* do something */
+      }
+    }
+  }

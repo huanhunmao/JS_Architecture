@@ -1,0 +1,10 @@
+/* the card to become a flex container. */
+
+.card {
+    /* default card styles */
+  
+    /* if the container width is 400px or bigger */
+    @container card (min-width: 400px) {
+      display: flex;
+    }
+  }

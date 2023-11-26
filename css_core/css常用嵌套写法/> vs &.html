@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 选择直接子元素  */
+        .nav__item {
+            > a {
+                padding: 1rem;
+            }
+        }
+
+        /* 选择内部元素  */
+        .nav__item {
+            & a {
+                color: blue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p>这是直接子元素</p>
+        <span>这也是直接子元素</span>
+        <div>
+          <p>这不是直接子元素</p>
+        </div>
+      </div>
+      
+</body>
+</html>

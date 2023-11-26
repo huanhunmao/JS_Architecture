@@ -1,0 +1,26 @@
+.post-content {
+    & figure {
+      & img {
+        /* the figure's image styles */
+      }
+  
+      /* changes to the <figure> container, if it has a figcaption element */
+      &:has(figcaption) {
+        display: flex;
+        align-items: start;
+      }
+  
+      & figcaption {
+        /* caption styling */
+      }
+    }
+  }
+
+  /* I need to add a border to all list items except the last one */
+.post-content {
+    li {
+      &:not(:last-child) {
+        border-bottom: 1px solid;
+      }
+    }
+  }
